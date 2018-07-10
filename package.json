@@ -1,0 +1,41 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdakowicz/data-structures.git"
+  },
+  "author": "jakub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdakowicz/data-structures/issues"
+  },
+  "homepage": "https://github.com/jdakowicz/data-structures#readme",
+  "devDependencies": {
+    "@types/jest": "^23.1.5",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.0",
+    "jest": "^23.4.0",
+    "ts-jest": "^23.0.0",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
