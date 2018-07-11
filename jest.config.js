@@ -19,5 +19,20 @@ module.exports = {
   coveragePathIgnorePatterns: ['<rootDir>/node_modules/'],
 
   // The pattern Jest uses to detect test files.
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.ts?$',
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
+  globals: {
+		'ts-jest': {
+			tsConfigFile: 'tsconfig.json'
+		}
+	},
+  roots: [
+    "<rootDir>/src"
+  ],
+  transform: {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  moduleFileExtensions: [
+    "ts",
+    "js"
+  ],
 };
